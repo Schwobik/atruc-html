@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historie | Atrofované ruce</title>
+    <meta name="description" content="Historie týmu Atrofované ruce – od garážové punkové kapely k ultimate frisbee týmu od roku 2002.">
+    <meta property="og:title" content="Historie | Atrofované ruce">
+    <meta property="og:image" content="img/IMG_7450.PNG">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-electric-500: #8B1A1A;
+            --color-electric-600: #701515;
+            --color-electric-700: #5A1010;
+            --color-electric-300: #C45050;
+            --color-navy-900: #1C1C1C;
+            --color-navy-800: #2A2A2A;
+            --color-navy-700: #363636;
+            --color-sky-400: #38BDF8;
+        }
+    </style>
+    <style>
+        .lazy-card { opacity: 0; transform: translateX(-20px); transition: opacity 1.2s ease, transform 1.2s ease; }
+        .lazy-card.visible { opacity: 1; transform: translateX(0); }
+        .slant { clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+        .slant-reverse { clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%); }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-navy-900 sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="img/IMG_7450.PNG" alt="Atruc logo" class="h-10 w-10 rounded-full object-cover">
+                <span class="text-white font-extrabold text-lg tracking-widest uppercase">Atrofované ruce</span>
+            </a>
+            <div class="hidden md:flex items-center gap-1">
+                <a href="index.html" class="text-gray-400 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-transparent hover:border-electric-500 hover:text-electric-300">Úvod</a>
+                <a href="o-nas.html" class="text-gray-400 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-transparent hover:border-electric-500 hover:text-electric-300">O nás</a>
+                <a href="historie.html" class="text-electric-300 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-electric-500">Historie</a>
+                <a href="reprezentace.html" class="text-gray-400 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-transparent hover:border-electric-500 hover:text-electric-300">Reprezentace</a>
+                <a href="kontakt.html" class="text-gray-400 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-transparent hover:border-electric-500 hover:text-electric-300">Kontakt</a>
+            </div>
+            <button class="md:hidden text-white text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-t border-white/10 pb-3">
+            <a href="index.html" class="block px-4 py-2 text-gray-400 hover:bg-white/5 font-bold uppercase text-sm">Úvod</a>
+            <a href="o-nas.html" class="block px-4 py-2 text-gray-400 hover:bg-white/5 font-bold uppercase text-sm">O nás</a>
+            <a href="historie.html" class="block px-4 py-2 text-electric-300 hover:bg-white/5 font-bold uppercase text-sm">Historie</a>
+            <a href="reprezentace.html" class="block px-4 py-2 text-gray-400 hover:bg-white/5 font-bold uppercase text-sm">Reprezentace</a>
+            <a href="kontakt.html" class="block px-4 py-2 text-gray-400 hover:bg-white/5 font-bold uppercase text-sm">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-navy-900 text-white py-20 md:py-28 text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tighter">Historie</h1>
+        <p class="text-xl text-gray-400 uppercase tracking-widest font-light">Aneb co všechno může být první?</p>
+    </section>
+
+    <!-- Timeline -->
+    <section class="max-w-4xl mx-auto px-4 py-16">
+
+        <div class="relative border-l-2 border-electric-300 ml-4 md:ml-8 space-y-12">
+
+            <!-- 2002: Founding -->
+            <div class="lazy-card relative pl-8 md:pl-12">
+                <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-electric-500 border-2 border-white"></div>
+                <span class="text-electric-500 font-bold text-lg">2002</span>
+                <h3 class="text-xl font-black mt-1 mb-3 uppercase">Založení týmu</h3>
+                <div class="bg-white rounded-none shadow-lg p-6 border-l-4 border-electric-500">
+                    <p class="mb-3">Pojem <strong>atrofovaná ruka</strong> spatřil světlo světa ještě dříve, než jsme zjistili, co je to frisbee. Konkrétně na jednom ozdravném srazu roku 2002 na chatě, kdy nám v časopise padl do oka obrázek indického gurua s atrofovanou rukou.</p>
+                    <p class="mb-3">Nám (Úď, Raduz, Štanda) se ten pojem hned zalíbil, a ještě toho dne jsme v garáži založili garážovou punkovou kapelu <strong>„Atrofované ruce"</strong> a mlátili do všeho, co tam bylo.</p>
+                    <p>O několik měsíců přijel Raduz z dovolené ve Španělsku a říká: „hrál jsem tam na pláži super hru, to musíme taky zkusit". Tak jsme založili tým – a název už jsme měli. Psalo se jaro roku 2002.</p>
+                </div>
+            </div>
+
+            <!-- 2002: First camp -->
+            <div class="lazy-card relative pl-8 md:pl-12">
+                <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-electric-500 border-2 border-white"></div>
+                <span class="text-electric-500 font-bold text-lg">2002</span>
+                <h3 class="text-xl font-black mt-1 mb-3 uppercase">První soustředění v Milavčích</h3>
+                <div class="bg-white rounded-none shadow-lg p-6 border-l-4 border-electric-500">
+                    <p class="mb-3">Raduz a Zdenour sehnali <strong>první dva disky</strong>; během následujících několika měsíců jsme popřemlouvali všechny své kamarády a známé.</p>
+                    <p class="mb-3"><strong>První soustředění</strong> se uskutečnilo na konci léta roku 2002 v malebné vesničce Milavče u Domažlic, kde po voňavé trávě běhalo deset stejně oblečených nadšenců.</p>
+                    <p>Na prvním ligovém turnaji v Mnichovicích jsme donášeli disk do koncové zóny celkově šestnáctkrát – přesně o sto míň než soupeř. Ale 9. místo v nás podtrhlo další vlnu nadšení.</p>
+                </div>
+            </div>
+
+            <!-- 2003: First AtruCUP -->
+            <div class="lazy-card relative pl-8 md:pl-12">
+                <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-electric-500 border-2 border-white"></div>
+                <span class="text-electric-500 font-bold text-lg">2003</span>
+                <h3 class="text-xl font-black mt-1 mb-3 uppercase">První AtruCUP</h3>
+                <div class="bg-white rounded-none shadow-lg p-6 border-l-4 border-electric-500">
+                    <p class="mb-3">Toužili jsme po uspořádání vlastního turnaje, což se nám povedlo v létě 2003. Na <strong>první AtruCUP</strong> za námi přijelo osm týmů (z toho šest z Prahy).</p>
+                    <p>Společně jsme položili základy jedné skvělé prázdninové tradice. O tři roky později jsme ještě přidali beachový Olgoj.</p>
+                </div>
+            </div>
+
+            <!-- 2007: Sandsplash -->
+            <div class="lazy-card relative pl-8 md:pl-12">
+                <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-electric-500 border-2 border-white"></div>
+                <span class="text-electric-500 font-bold text-lg">2007</span>
+                <h3 class="text-xl font-black mt-1 mb-3 uppercase">Sandsplash – první turnajové vítězství!</h3>
+                <div class="bg-white rounded-none shadow-lg p-6 border-l-4 border-electric-500">
+                    <p class="mb-3">Zlatou éru začal Atruc okolo roku 2007, kdy jsme v rakouském Badenu vyhráli beachový turnaj – Sandsplash. Naše <strong>první turnajové vítězství</strong>, ještě k tomu na zahraničním turnaji s 16 družstvy ze šesti států!</p>
+                    <p>Na tento úspěch jsme navázali o rok nato ještě třetím místem ve venkovním open.</p>
+                    <div class="mt-4 bg-gray-100 rounded-lg h-40 flex items-center justify-center text-gray-400">
+                        Foto vítězné sestavy ze Sandsplashe 2007
+                    </div>
+                </div>
+            </div>
+
+            <!-- Present -->
+            <div class="lazy-card relative pl-8 md:pl-12">
+                <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-electric-500 border-2 border-white"></div>
+                <span class="text-electric-500 font-bold text-lg">Současnost</span>
+                <h3 class="text-xl font-black mt-1 mb-3 uppercase">~15 hráčů a blýská se na lepší časy</h3>
+                <div class="bg-white rounded-none shadow-lg p-6 border-l-4 border-electric-500">
+                    <p class="mb-3">S oblibou se účastníme plných závodů, kde podáváme stabilně vysoce nadprůměrné výsledky. Mnoho spiritových ocenění.</p>
+                    <p class="mb-3">Atruc byl již mnohokrát na pokraji existenční krize, ale vždy se našel někdo, kdo to vzal na sebe, sehnal pár nováčků a s vervou se pustil do dalšího trénování.</p>
+                    <p class="font-semibold text-electric-500">Naštěstí se nám teď podařilo poněkud rozšířit a omladit tým. Trénujeme zhruba v patnácti lidech a myslíme, že se nám blýská na lepší časy. Vrátí se někdy Atruc na bednu v 1. lize?</p>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="text-gray-500 italic text-sm mt-12 text-center">[...za poskytnuté info patří velké díky Úď, Udovi a Ewex...]</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-gray-400 pt-12 pb-6">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-electric-500 font-black mb-4 uppercase text-sm tracking-wide">Sociální sítě</h3>
+                <a href="https://www.facebook.com/atrofovaneruce" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">Facebook</a>
+                <a href="https://www.youtube.com/@atruc.ultimate" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">YouTube</a>
+                <a href="https://www.instagram.com/atruc.ultimate" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">Instagram</a>
+            </div>
+            <div>
+                <h3 class="text-electric-500 font-black mb-4 uppercase text-sm tracking-wide">Kontakt</h3>
+                <a href="mailto:atruc.plzen@centrum.cz" class="block mb-2 hover:text-electric-500 transition-colors">atruc.plzen@centrum.cz</a>
+                <a href="tel:721484787" class="block mb-2 hover:text-electric-500 transition-colors">721 484 787</a>
+            </div>
+            <div>
+                <h3 class="text-electric-500 font-black mb-4 uppercase text-sm tracking-wide">Odkazy</h3>
+                <a href="https://www.cald.cz" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">Česká asociace létajícího disku</a>
+                <a href="https://www.frisbee.cz" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">frisbee.cz</a>
+            </div>
+        </div>
+        <div class="text-center text-gray-600 text-sm border-t border-white/5 pt-6">
+            &copy; 2025 Atrofované ruce Plzeň. Všechna práva vyhrazena.
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.4 });
+        document.querySelectorAll('.lazy-card').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrofované ruce | Ultimate Frisbee Plzeň</title>
+    <meta name="description" content="Atrofované ruce - plzeňský ultimate frisbee tým založený v roce 2002. Přijďte si zahrát!">
+    <meta property="og:title" content="Atrofované ruce | Ultimate Frisbee Plzeň">
+    <meta property="og:description" content="Plzeňský ultimate frisbee tým od roku 2002">
+    <meta property="og:image" content="img/IMG_7450.PNG">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-electric-500: #8B1A1A;
+            --color-electric-600: #701515;
+            --color-electric-700: #5A1010;
+            --color-electric-300: #C45050;
+            --color-navy-900: #1C1C1C;
+            --color-navy-800: #2A2A2A;
+            --color-navy-700: #363636;
+            --color-sky-400: #38BDF8;
+        }
+    </style>
+    <style>
+        .lazy-card { opacity: 0; transform: translateX(-20px); transition: opacity 1.2s ease, transform 1.2s ease; }
+        .lazy-card.visible { opacity: 1; transform: translateX(0); }
+        .slant { clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+        .slant-reverse { clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%); }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-navy-900 sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="img/IMG_7450.PNG" alt="Atruc logo" class="h-10 w-10 rounded-full object-cover">
+                <span class="text-white font-extrabold text-lg tracking-widest uppercase">Atrofované ruce</span>
+            </a>
+            <div class="hidden md:flex items-center gap-1">
+                <a href="index.html" class="text-electric-300 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-electric-500">Úvod</a>
+                <a href="o-nas.html" class="text-gray-400 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-transparent hover:border-electric-500 hover:text-electric-300">O nás</a>
+                <a href="historie.html" class="text-gray-400 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-transparent hover:border-electric-500 hover:text-electric-300">Historie</a>
+                <a href="reprezentace.html" class="text-gray-400 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-transparent hover:border-electric-500 hover:text-electric-300">Reprezentace</a>
+                <a href="kontakt.html" class="text-gray-400 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-transparent hover:border-electric-500 hover:text-electric-300">Kontakt</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-white text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-t border-white/10 pb-3">
+            <a href="index.html" class="block px-4 py-2 text-electric-300 hover:bg-white/5 font-bold uppercase text-sm">Úvod</a>
+            <a href="o-nas.html" class="block px-4 py-2 text-gray-400 hover:bg-white/5 font-bold uppercase text-sm">O nás</a>
+            <a href="historie.html" class="block px-4 py-2 text-gray-400 hover:bg-white/5 font-bold uppercase text-sm">Historie</a>
+            <a href="reprezentace.html" class="block px-4 py-2 text-gray-400 hover:bg-white/5 font-bold uppercase text-sm">Reprezentace</a>
+            <a href="kontakt.html" class="block px-4 py-2 text-gray-400 hover:bg-white/5 font-bold uppercase text-sm">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="slant relative min-h-screen flex items-center justify-center bg-navy-900 text-white text-center px-4 pb-24" style="background-image: url('img/IMG_9251.JPG'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="absolute inset-0 bg-gradient-to-tr from-electric-700/20 via-transparent to-sky-400/10"></div>
+        <div class="relative">
+            <h1 class="text-5xl md:text-8xl font-black tracking-tighter mb-2 uppercase">Atrofované</h1>
+            <h1 class="text-5xl md:text-8xl font-black tracking-tighter mb-4 uppercase text-electric-500">Ruce</h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-8 uppercase tracking-widest font-light">Ultimate Frisbee Plzeň</p>
+            <a href="kontakt.html" class="inline-block bg-electric-500 hover:bg-electric-600 text-white font-black px-10 py-4 rounded-none text-lg transition-colors shadow-lg uppercase tracking-wide skew-x-[-3deg]">
+                <span class="inline-block skew-x-[3deg]">Přijď trénovat!</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Three Info Cards -->
+    <section class="max-w-7xl mx-auto px-4 -mt-8 relative z-10 mb-16">
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="lazy-card bg-white rounded-none shadow-lg p-8 border-l-4 border-electric-500" style="transition-delay:0ms">
+                <h3 class="text-navy-900 font-black text-xl mb-3 uppercase">CO HRAJEME</h3>
+                <p class="text-gray-600">Ultimate Frisbee týmový bezkontaktní sport, kde hrajou kluci s holkama dohromady. <br/><br/> <b>Běháš.</b>    
+<b>Přihráváš disk.</b><br/>
+<b>Skóruješ chytem v zóně.</b></p>
+            </div>
+            <div class="lazy-card bg-white rounded-none shadow-lg p-8 border-l-4 border-electric-500" style="transition-delay:400ms">
+                <h3 class="text-navy-900 font-black text-xl mb-3 uppercase">KDO JSME</h3>
+                <p class="text-gray-600">Plzeňský tým založený v roce <strong>2002</strong>. Jako jediní v západních Čechách se dlouhodobě účastníme Mistrovství České republiky ve všech kategoriích: <strong>Open, Women, Mixed</strong> a <strong>Junioři</strong>.</p>
+            </div>
+            <div class="lazy-card bg-white rounded-none shadow-lg p-8 border-l-4 border-electric-500" style="transition-delay:800ms">
+                <h3 class="text-navy-900 font-black text-xl mb-3 uppercase">KDE A KDY</h3>
+                <p class="text-gray-600">Každé ÚT a ČT 17–19h, Borský park, Plzeň<br/><br/>Od března do října.<br/> Za každého počasí.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Video -->
+    <section class="max-w-4xl mx-auto px-4 mb-16">
+        <h2 class="text-3xl font-black text-center mb-8 uppercase">Atrofované ruce – Promo video</h2>
+        <div class="lazy-card aspect-video rounded-none overflow-hidden shadow-lg bg-navy-900">
+
+<iframe class="w-full h-full" width="560" height="315" src="https://www.youtube.com/embed/wiAd1ZAZ46I?si=waQdvdAJODRnzTfj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Recruitment Banner -->
+    <section class="slant-reverse bg-electric-500 pt-20 pb-16 mb-16">
+        <div class="max-w-4xl mx-auto px-4 text-center text-white">
+            <h2 class="text-3xl md:text-5xl font-black mb-4 uppercase">Hledáme nové hráče!</h2>
+            <p class="text-xl mb-8 text-white/80">Rádi mezi sebou přivítáme nové tváře od 14 let. Neváhej a přijď frisbee alespoň zkusit!</p>
+            <a href="kontakt.html" class="inline-block bg-navy-900 hover:bg-navy-800 text-white font-black px-10 py-4 rounded-none text-lg transition-colors uppercase tracking-wide skew-x-[-3deg]">
+                <span class="inline-block skew-x-[3deg]">Více informací</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Training Schedule + Map -->
+    <section class="max-w-7xl mx-auto px-4 mb-16">
+        <h2 class="text-3xl font-black text-center mb-8 uppercase">Tréninky</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+                <div class="lazy-card bg-white rounded-none shadow-lg p-6 border-l-4 border-electric-500" style="transition-delay:0ms">
+                    <h3 class="text-electric-600 font-black text-lg mb-4 uppercase">Přes léto (duben – říjen)</h3>
+                    <p class="font-semibold text-navy-900 mb-2">Borský park (velká louka)</p>
+                    <p>Úterý: 17:00 – 19:00</p>
+                    <p>Čtvrtek: 17:00 – 19:00</p>
+                    <p class="text-gray-500 italic mt-3 text-sm">Tréninky jsou i za špatného počasí</p>
+                </div>
+                <div class="lazy-card bg-white rounded-none shadow-lg p-6 border-l-4 border-electric-500" style="transition-delay:400ms">
+                    <h3 class="text-electric-600 font-black text-lg mb-4 uppercase">Přes zimu (listopad – březen)</h3>
+                    <p class="font-semibold text-navy-900 mb-2">Nafukovací hala na Borech</p>
+                    <p>Úterý: 20:00 – 22:00</p>
+                    <p>Čtvrtek: 19:00 – 21:00</p>
+                </div>
+            </div>
+            <div class="lazy-card bg-white rounded-none shadow-lg overflow-hidden">
+             	<iframe class="w-full h-full min-h-80" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2579.253180651155!2d13.363607455038318!3d49.724860080782314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470aee0e1c26c4ed%3A0x289b59a4af463d6b!2s301%2000%20Plze%C5%88%203!5e0!3m2!1scs!2scz!4v1772649129128!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-gray-400 pt-12 pb-6">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-electric-500 font-black mb-4 uppercase text-sm tracking-wide">Sociální sítě</h3>
+                <a href="https://www.facebook.com/atrofovaneruce" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">Facebook</a>
+                <a href="https://www.youtube.com/@atruc.ultimate" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">YouTube</a>
+                <a href="https://www.instagram.com/atruc.ultimate" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">Instagram</a>
+            </div>
+            <div>
+                <h3 class="text-electric-500 font-black mb-4 uppercase text-sm tracking-wide">Kontakt</h3>
+                <a href="mailto:atruc.plzen@centrum.cz" class="block mb-2 hover:text-electric-500 transition-colors">atruc.plzen@centrum.cz</a>
+                <a href="tel:721484787" class="block mb-2 hover:text-electric-500 transition-colors">721 484 787</a>
+            </div>
+            <div>
+                <h3 class="text-electric-500 font-black mb-4 uppercase text-sm tracking-wide">Odkazy</h3>
+                <a href="https://www.cald.cz" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">Česká asociace létajícího disku</a>
+                <a href="https://www.frisbee.cz" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">frisbee.cz</a>
+            </div>
+        </div>
+        <div class="text-center text-gray-600 text-sm border-t border-white/5 pt-6">
+            &copy; 2025 Atrofované ruce Plzeň. Všechna práva vyhrazena.
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.4 });
+        document.querySelectorAll('.lazy-card').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

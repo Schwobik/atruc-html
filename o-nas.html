@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nás | Atrofované ruce</title>
+    <meta name="description" content="O nás – Atrofované ruce. Open, Women, Mixed a Junioři. Plzeňský ultimate frisbee tým.">
+    <meta property="og:title" content="O nás | Atrofované ruce">
+    <meta property="og:image" content="img/IMG_7450.PNG">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-electric-500: #8B1A1A;
+            --color-electric-600: #701515;
+            --color-electric-700: #5A1010;
+            --color-electric-300: #C45050;
+            --color-navy-900: #1C1C1C;
+            --color-navy-800: #2A2A2A;
+            --color-navy-700: #363636;
+            --color-sky-400: #38BDF8;
+        }
+    </style>
+    <style>
+        .lazy-card { opacity: 0; transform: translateX(-20px); transition: opacity 1.2s ease, transform 1.2s ease; }
+        .lazy-card.visible { opacity: 1; transform: translateX(0); }
+        .slant { clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+        .slant-reverse { clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%); }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-navy-900 sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="img/IMG_7450.PNG" alt="Atruc logo" class="h-10 w-10 rounded-full object-cover">
+                <span class="text-white font-extrabold text-lg tracking-widest uppercase">Atrofované ruce</span>
+            </a>
+            <div class="hidden md:flex items-center gap-1">
+                <a href="index.html" class="text-gray-400 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-transparent hover:border-electric-500 hover:text-electric-300">Úvod</a>
+                <a href="o-nas.html" class="text-electric-300 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-electric-500">O nás</a>
+                <a href="historie.html" class="text-gray-400 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-transparent hover:border-electric-500 hover:text-electric-300">Historie</a>
+                <a href="reprezentace.html" class="text-gray-400 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-transparent hover:border-electric-500 hover:text-electric-300">Reprezentace</a>
+                <a href="kontakt.html" class="text-gray-400 px-3 py-2 text-sm font-bold uppercase tracking-wide border-b-2 border-transparent hover:border-electric-500 hover:text-electric-300">Kontakt</a>
+            </div>
+            <button class="md:hidden text-white text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-t border-white/10 pb-3">
+            <a href="index.html" class="block px-4 py-2 text-gray-400 hover:bg-white/5 font-bold uppercase text-sm">Úvod</a>
+            <a href="o-nas.html" class="block px-4 py-2 text-electric-300 hover:bg-white/5 font-bold uppercase text-sm">O nás</a>
+            <a href="historie.html" class="block px-4 py-2 text-gray-400 hover:bg-white/5 font-bold uppercase text-sm">Historie</a>
+            <a href="reprezentace.html" class="block px-4 py-2 text-gray-400 hover:bg-white/5 font-bold uppercase text-sm">Reprezentace</a>
+            <a href="kontakt.html" class="block px-4 py-2 text-gray-400 hover:bg-white/5 font-bold uppercase text-sm">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-navy-900 text-white py-20 md:py-28 text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tighter">O nás</h1>
+        <p class="text-xl text-gray-400 uppercase tracking-widest font-light">Jak to s námi vypadá teď?</p>
+    </section>
+
+    <!-- Team Sections -->
+    <section class="max-w-5xl mx-auto px-4 py-16 space-y-12">
+
+        <!-- Open -->
+        <div class="lazy-card bg-white rounded-none shadow-lg p-8 border-l-4 border-electric-500">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="bg-electric-500 text-white text-sm font-black px-3 py-1 rounded-none uppercase">OPEN</span>
+                <h2 class="text-2xl font-black uppercase">Open</h2>
+            </div>
+            <div class="space-y-3 border-l-4 border-electric-500 pl-6">
+                <p>Halová kvalifikace do <strong>2. ligy 2020</strong> dopadla velmi úspěšně – <strong>2. místo</strong>, a tedy účast na finále 2. ligy, <strong>a výhra SOTG</strong>.</p>
+                <p>Ve druhé lize se pak open umístil také na <strong>druhém místě a přidal k tomu 2. místo v SOTG</strong>. Příští rok je tak čeká boj o první ligu!</p>
+            </div>
+            <div class="mt-6 bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
+                Foto týmu Open
+            </div>
+        </div>
+
+        <!-- Women -->
+        <div class="lazy-card bg-white rounded-none shadow-lg p-8 border-l-4 border-electric-500">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="bg-electric-500 text-white text-sm font-black px-3 py-1 rounded-none uppercase">WOMEN</span>
+                <h2 class="text-2xl font-black uppercase">Women</h2>
+            </div>
+            <div class="space-y-3 border-l-4 border-electric-500 pl-6">
+                <p>Halovou sezónu <strong>2020</strong> jsme odstartovaly úspěšně – <strong>výhrou kvalifikace a 4. místem v SOTG</strong>.</p>
+                <p>Na následném mistrovství jsme mezi nejlepšími týmy vybojovaly <strong>6. místo celkově a 2. místo v SOTG</strong>.</p>
+            </div>
+            <div class="mt-6 bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
+                Foto týmu Women
+            </div>
+        </div>
+
+        <!-- Mixed -->
+        <div class="lazy-card bg-white rounded-none shadow-lg p-8 border-l-4 border-electric-500">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="bg-electric-500 text-white text-sm font-black px-3 py-1 rounded-none uppercase">MIXED</span>
+                <h2 class="text-2xl font-black uppercase">Mixed</h2>
+            </div>
+            <div class="space-y-3 border-l-4 border-electric-500 pl-6">
+                <p>Ocenění <strong>nejspiritovějšího týmu ČR za rok 2018</strong> (průměrné nejvyšší umístění v SOTG na mixed turnajích za tuto sezónu)!</p>
+                <p><strong>Vítězové 2. ligy pro letní sezónu 2019</strong></p>
+                <p>V halové sezóně 2019/2020 pro nás nevyšla první liga. Na kvalifikaci jsme postavili 2 týmy. Naše A získalo <strong>1. místo v SOTG</strong>.</p>
+                <p>Halové MČR pořádáme v plzeňské Lokomotivě a v roce 2020 si odnášíme <strong>3. místo 2. ligy a 5. místo v SOTG</strong>.</p>
+                <p>Kvalifikováno na 2. ligu pro letní sezónu 2020.</p>
+            </div>
+            <div class="mt-6 bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
+                Foto týmu Mixed
+            </div>
+        </div>
+
+        <!-- Junioři -->
+        <div class="lazy-card bg-white rounded-none shadow-lg p-8 border-l-4 border-electric-500">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="bg-electric-500 text-white text-sm font-black px-3 py-1 rounded-none uppercase">JUNIOŘI</span>
+                <h2 class="text-2xl font-black uppercase">Junioři</h2>
+            </div>
+            <div class="space-y-3 border-l-4 border-electric-500 pl-6">
+                <p>Na <strong>halovém mistrovství juniorů 2019</strong> jsme při rekordním počtu 20 týmů a nové sestavě obsadili <strong>10. příčku</strong> a k tomu <strong>3. místo v SOTG</strong>.</p>
+            </div>
+            <div class="mt-6 bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
+                Foto týmu Junioři
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-gray-400 pt-12 pb-6">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-electric-500 font-black mb-4 uppercase text-sm tracking-wide">Sociální sítě</h3>
+                <a href="https://www.facebook.com/atrofovaneruce" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">Facebook</a>
+                <a href="https://www.youtube.com/@atruc.ultimate" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">YouTube</a>
+                <a href="https://www.instagram.com/atruc.ultimate" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">Instagram</a>
+            </div>
+            <div>
+                <h3 class="text-electric-500 font-black mb-4 uppercase text-sm tracking-wide">Kontakt</h3>
+                <a href="mailto:atruc.plzen@centrum.cz" class="block mb-2 hover:text-electric-500 transition-colors">atruc.plzen@centrum.cz</a>
+                <a href="tel:721484787" class="block mb-2 hover:text-electric-500 transition-colors">721 484 787</a>
+            </div>
+            <div>
+                <h3 class="text-electric-500 font-black mb-4 uppercase text-sm tracking-wide">Odkazy</h3>
+                <a href="https://www.cald.cz" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">Česká asociace létajícího disku</a>
+                <a href="https://www.frisbee.cz" class="block mb-2 hover:text-electric-500 transition-colors" target="_blank">frisbee.cz</a>
+            </div>
+        </div>
+        <div class="text-center text-gray-600 text-sm border-t border-white/5 pt-6">
+            &copy; 2025 Atrofované ruce Plzeň. Všechna práva vyhrazena.
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.4 });
+        document.querySelectorAll('.lazy-card').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
